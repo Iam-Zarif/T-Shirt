@@ -1,0 +1,11 @@
+.tshirt-image{
+    height: 300px;
+    width: 250px;
+    
+    padding: 15px;
+    
+}
+.tShirtDiv{
+    border: 1px solid black;
+    border-radius: 10px;
+}
