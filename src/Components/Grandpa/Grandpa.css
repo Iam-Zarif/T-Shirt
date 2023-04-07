@@ -1,0 +1,15 @@
+.grandpaChild div{
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid blue;
+}
+.grandpaChild{
+display: flex;
+    gap: 30px;
+}
+.GrandpaMain{
+    border: 2px solid greenyellow;
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 10px;
+}

@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from './Components/Home/Home';
 import Main from './Components/Layout/Main';
 import OrderReview from './Components/OrderReview/OrderReview';
+import Grandpa from './Components/Grandpa/Grandpa';
 
 const router = createBrowserRouter([
   {
@@ -13,15 +14,19 @@ const router = createBrowserRouter([
     element: <Main></Main>,
     children: [
       {
-        path:'/',
+        path: "/",
         element: <Home></Home>,
-        loader:() => fetch('data.json')
+        loader: () => fetch("data.json"),
       },
       {
-        path:'review',
-        element:<OrderReview></OrderReview>
-      }
-    ]
+        path: "review",
+        element: <OrderReview></OrderReview>,
+      },
+      {
+        path: "grandpa",
+        element: <Grandpa></Grandpa>,
+      },
+    ],
   },
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(
